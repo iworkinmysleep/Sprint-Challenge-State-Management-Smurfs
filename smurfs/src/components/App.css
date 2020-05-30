@@ -1,20 +1,62 @@
 .App {
-  text-align: center;
-  }
+	text-align: center;
 
-label {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
 }
 
+label {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+}
+h1 {
+	color: lightskyblue;
+}
 .smurf_container {
-  margin: 0 auto;
-  background-color:rgb(8, 221, 221);
-  width: 15%;
-  padding: 5px;
-  border: 1px dotted black;
-  border-radius: 20px;
-  color: white;
+	width: 80%;
+	margin: 0 auto;
+	background-color: rgb(8, 221, 221);
+	padding: 5px;
+	border: 1px dotted black;
+	border-radius: 20px;
+	color: white;
+}
+
+
+.smurf {
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 5px;
+	border: 2px solid blue;
+	border-radius: 20px;
+	padding: 10px;
+	width: 150px;
+	height: 150px;
+	background-color: lightskyblue;
+	
+}
+
+.smurf_form {
+	color: purple;
+	padding: 5px;
+
+}
+
+button {
+	width: 200px;
+	background-color: purple;
+	color: white;
+	border-radius: 15px;
+}
+
+button:hover {
+	background-color: white;
+	color: royalblue;
+}
+
+img {
+	border-radius: 20px;
+	box-shadow: 2px 2px blue;
 }

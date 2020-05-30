@@ -6,12 +6,10 @@ const Smurfs = () => {
 	console.log("smurf", { smurf });
 
 	const smurfList = smurf.map((i) => (
-		<div className="smurf_container">
-			<div className="smurf" key={i.id}>
-				<h3>Name: {i.name}</h3>
-				<h4>Age: {i.age}</h4>
-				<h4>Height: {i.height}</h4>
-			</div>
+		<div className="smurf" key={i.id}>
+			<h2>{i.name}</h2>
+			<p>Age: {i.age}</p>
+			<p>Height: {i.height}</p>
 		</div>
 	));
 

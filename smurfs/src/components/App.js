@@ -36,9 +36,14 @@ const App = () => {
 				<div>Start inside of your `src/index.js` file!</div>
 				<div>Have fun!</div>
 				<br />
-				<h1>Smurf Village:</h1>
-				<Smurfs />
-				<AddSmurf formSubmit={formSubmit} />
+				
+				<div className="smurf_container">
+					<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSZBLsHAUCYfY3MKFKZL4C6ZtltagMm2xEtHIkmecpkitdm_wwd&usqp=CAU' alt='smurf village'></img>
+					<Smurfs />
+					<img src='https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTk1pnqTzWKjz_SnoXCeAG3RhOX2KI1Whp_r1yfl86md9w9Tez6&usqp=CAU' alt=''></img>
+					<AddSmurf formSubmit={formSubmit} />
+				</div>
+				
 			</smurfContext.Provider>
 		</div>
 	);

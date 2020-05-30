@@ -25,7 +25,7 @@ const AddSmurf = ({ formSubmit }) => {
 	};
 
 	return (
-		<div>
+		<div className='smurf_form'>
 			<h2>Add Smurf to Village!</h2>
 				<label htmlFor="name">
 					Name:
