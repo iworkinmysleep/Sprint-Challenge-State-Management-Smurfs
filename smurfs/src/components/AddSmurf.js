@@ -1,26 +1,37 @@
 import React, { useState } from "react";
 
-const AddSmurf = () => {
+const AddSmurf = ({ formSubmit }) => {
 	const [smurfVillage, setSmurfVillage] = useState({
 		name: "",
 		age: "",
-		height: "",
+    height: "",
 	});
 	const handleChanges = (e) => {
-		e.preventDefault();
 		setSmurfVillage({
 			...smurfVillage,
 			[e.target.name]: e.target.value,
 		});
 	};
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		formSubmit(smurfVillage);
+		setSmurfVillage({
+			name: "",
+			age: "",
+      height: "",
+      id: 1,
+		});
+	};
+
 	return (
 		<div>
 			<h2>Add Smurf to Village!</h2>
-			<form>
 				<label htmlFor="name">
 					Name:
 					<input
-						type="text"
+            type="text"
+            name='name'
 						placeholder="Smurf Name.."
 						onChange={handleChanges}
 						value={smurfVillage.name}></input>
@@ -28,7 +39,8 @@ const AddSmurf = () => {
 				<label htmlFor="age">
 					Age:
 					<input
-						type="text"
+            type="text"
+            name='age'
 						placeholder="Smurf Age.."
 						onChange={handleChanges}
 						value={smurfVillage.age}></input>
@@ -36,13 +48,15 @@ const AddSmurf = () => {
 				<label htmlFor="height">
 					Height:
 					<input
-						type="text"
+            type="text"
+            name='height'
 						placeholder="Smurf Height.."
 						onChange={handleChanges}
 						value={smurfVillage.height}></input>
 				</label>
-				<button type="submit">Add Smurf</button>
-			</form>
+				<button type="submit" onClick={handleSubmit}>
+					Add Smurf
+				</button>
 		</div>
 	);
 };
