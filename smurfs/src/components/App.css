@@ -1,6 +1,11 @@
+body {
+	box-sizing: border-box;
+	margin: 0;
+}
+
 .App {
 	text-align: center;
-
+	
 }
 
 label {
@@ -12,19 +17,15 @@ label {
 h1 {
 	color: lightskyblue;
 }
-.smurf_container {
-	width: 80%;
-	margin: 0 auto;
+.container {
 	background-color: rgb(8, 221, 221);
 	padding: 5px;
 	border: 1px dotted black;
 	border-radius: 20px;
-	color: white;
 }
 
-
 .smurf {
-	display:flex;
+	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -35,21 +36,20 @@ h1 {
 	width: 150px;
 	height: 150px;
 	background-color: lightskyblue;
-	
 }
 
-.smurf_form {
+.form-group {
 	color: purple;
-	padding: 5px;
-
+	width: 40%;
+	margin: auto;
 }
 
-button {
+/* button {
 	width: 200px;
 	background-color: purple;
 	color: white;
 	border-radius: 15px;
-}
+} */
 
 button:hover {
 	background-color: white;
@@ -59,4 +59,11 @@ button:hover {
 img {
 	border-radius: 20px;
 	box-shadow: 2px 2px blue;
+	margin-bottom: 20px;
+}
+
+.card {
+	width: 18rem;
+	background-color: rgb(90, 190, 248);
+	margin: auto;
 }
